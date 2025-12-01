@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Review Scraper",
+  "version": "1.0",
+  "description": "Scrapes reviews and ratings from Amazon product pages.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

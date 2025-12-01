@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Review Scraper</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f0c14b;
+      border: 1px solid #a88734;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ddb347;
+    }
+    #results {
+      margin-top: 10px;
+      white-space: pre-wrap;
+      font-size: 12px;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    .rating-header {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Review Scraper</h3>
+  <button id="scrapeBtn">Scrape Reviews</button>
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
